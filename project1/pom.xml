@@ -1,0 +1,84 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.bugs.jlink.reproduce</groupId>
+        <artifactId>jdk-jlink-parent</artifactId>
+        <version>0.0.0_0-SNAPSHOT</version>
+    </parent>
+
+    <name>Test Large Modules</name>
+    <artifactId>test-jlink-client</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- JAX-RS Services-->
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>org.apache.cxf</artifactId>
+        </dependency>
+
+        <!-- Microsoft Documents -->
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>apache-poi-ooxml</artifactId>
+        </dependency>
+
+        <!-- Hibernate ORM -->
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>hibernate-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>primefaces</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>javax.transaction</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>1.10.2</version>
+        </dependency>
+
+        <!-- JCache -->
+
+        <dependency>
+            <groupId>com.guicedee.persistence</groupId>
+            <artifactId>guiced-hazelcast</artifactId>
+        </dependency>
+
+        <!-- Javax Servlet Provider-->
+
+        <dependency>
+            <groupId>com.guicedee</groupId>
+            <artifactId>guiced-undertow</artifactId>
+        </dependency>
+
+        <!-- Domain Entity Controller -->
+        <dependency>
+            <groupId>com.entityassist</groupId>
+            <artifactId>entity-assist</artifactId>
+        </dependency>
+
+
+        <!-- Open API -->
+        <dependency>
+            <groupId>com.guicedee.servlets</groupId>
+            <artifactId>guiced-swagger</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.guicedee.servlets</groupId>
+            <artifactId>guiced-swagger-ui</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

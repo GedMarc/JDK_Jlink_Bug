@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.guicedee.services:guice:1.0.2.18-jre13">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/guice/1.0.2.18-jre13/guice-1.0.2.18-jre13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/guice/1.0.2.18-jre13/guice-1.0.2.18-jre13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/guicedee/services/guice/1.0.2.18-jre13/guice-1.0.2.18-jre13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
