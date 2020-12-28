@@ -11,9 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jdk-jlink-parent" target="13" />
-      <module name="jlink-error" target="13" />
-      <module name="test-jlink-client" target="13" />
+      <module name="jdk-jlink-parent" target="14" />
+      <module name="jlink-error" target="14" />
+      <module name="test-jlink-client" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>
