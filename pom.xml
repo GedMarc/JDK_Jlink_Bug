@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
 
-        <jdk.release>13</jdk.release>
+        <jdk.release>15</jdk.release>
 
         <guicedee.version>1.0.2.18-jre13</guicedee.version>
 
