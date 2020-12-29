@@ -30,12 +30,21 @@
             <artifactId>hibernate-core</artifactId>
         </dependency>
 
-        <!-- 2020/12/29 @gedmarc - latest pf update made module-info @todo fix pf module-info -->
-        <!--<dependency>
+        <dependency>
             <groupId>com.guicedee.services</groupId>
-            <artifactId>primefaces</artifactId>
-        </dependency>-->
+            <artifactId>openpdf</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>javax.faces</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jwebmp.plugins.forms</groupId>
+            <artifactId>jwebmp-bootstrap-quick-forms</artifactId>
+            <version>${guicedee.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
