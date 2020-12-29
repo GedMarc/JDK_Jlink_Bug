@@ -17,26 +17,26 @@
 
         <jdk.release>15</jdk.release>
 
-        <guicedee.version>1.0.2.18-jre13</guicedee.version>
+        <guicedee.version>0.0.0_0-SNAPSHOT</guicedee.version>
 
-        <maven.assembly.version>3.1.0</maven.assembly.version>
-        <maven.jar.version>3.1.0</maven.jar.version>
+        <maven.assembly.version>3.3.0</maven.assembly.version>
+        <maven.jar.version>3.2.0</maven.jar.version>
         <maven.clean.version>3.1.0</maven.clean.version>
-        <maven.dependency.version>3.1.1</maven.dependency.version>
-        <maven.javadoc.version>3.0.1</maven.javadoc.version>
+        <maven.dependency.version>3.1.2</maven.dependency.version>
+        <maven.javadoc.version>3.2.0</maven.javadoc.version>
         <maven.deploy.version>3.0.0-M1</maven.deploy.version>
         <maven.install.version>3.0.0-M1</maven.install.version>
-        <maven.source.version>3.0.1</maven.source.version>
-        <maven.site.version>3.7.1</maven.site.version>
-        <maven.shade.version>3.2.1</maven.shade.version>
+        <maven.source.version>3.2.1</maven.source.version>
+        <maven.site.version>3.9.1</maven.site.version>
+        <maven.shade.version>3.2.4</maven.shade.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
-        <maven.surefire.version>3.0.0-M4</maven.surefire.version>
+        <maven.surefire.version>3.0.0-M5</maven.surefire.version>
         <maven.failsafe.version>3.0.0-M1</maven.failsafe.version>
-        <maven.resources.version>3.1.0</maven.resources.version>
-        <maven.release.version>2.5.3</maven.release.version>
-        <maven.versions.version>2.7</maven.versions.version>
+        <maven.resources.version>3.2.0</maven.resources.version>
+        <maven.release.version>3.0.0-M1</maven.release.version>
+        <maven.versions.version>2.8.1</maven.versions.version>
         <maven.verifyier.version>1.1</maven.verifyier.version>
-        <maven.asm.version>7.3.1</maven.asm.version>
+        <maven.asm.version>9.0</maven.asm.version>
         <maven.gpg.version>1.6</maven.gpg.version>
 
         <maven.war.version>3.2.2</maven.war.version>
@@ -60,7 +60,7 @@
             </dependency>
             <dependency>
                 <groupId>com.guicedee</groupId>
-                <artifactId>guicedee-parent</artifactId>
+                <artifactId>guicedee-projects</artifactId>
                 <version>${guicedee.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -98,7 +98,7 @@
                         <dependency>
                             <groupId>org.junit.jupiter</groupId>
                             <artifactId>junit-jupiter-engine</artifactId>
-                            <version>5.6.0</version>
+                            <version>5.7.0</version>
                         </dependency>
                         <dependency>
                             <groupId>org.ow2.asm</groupId>
@@ -107,8 +107,6 @@
                         </dependency>
                     </dependencies>
                     <configuration>
-                        <argLine>--add-opens java.base/java.lang=com.google.guice,javassist
-                        </argLine>
                         <testFailureIgnore>true</testFailureIgnore>
                         <!--<forkCount>0</forkCount>
                         <reuseForks>false</reuseForks>-->

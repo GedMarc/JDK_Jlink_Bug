@@ -1,6 +1,6 @@
 module jdk.jlink.bug {
     requires org.apache.poi.ooxml;
-    requires com.guicedee.guicedservlets.swagger;
+    requires com.guicedee.guicedservlets.openapi;
     requires com.guicedee.services.swaggerui;
     requires org.apache.cxf;
 

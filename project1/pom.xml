@@ -44,7 +44,7 @@
         <dependency>
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
-            <version>1.10.2</version>
+            <version>1.10.18</version>
         </dependency>
 
         <!-- JCache -->
@@ -57,7 +57,7 @@
         <!-- Javax Servlet Provider-->
 
         <dependency>
-            <groupId>com.guicedee</groupId>
+            <groupId>com.guicedee.servlets</groupId>
             <artifactId>guiced-undertow</artifactId>
         </dependency>
 
@@ -71,7 +71,7 @@
         <!-- Open API -->
         <dependency>
             <groupId>com.guicedee.servlets</groupId>
-            <artifactId>guiced-swagger</artifactId>
+            <artifactId>guiced-openapi</artifactId>
         </dependency>
 
         <dependency>
