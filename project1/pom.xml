@@ -30,10 +30,11 @@
             <artifactId>hibernate-core</artifactId>
         </dependency>
 
-        <dependency>
+        <!-- 2020/12/29 @gedmarc - latest pf update made module-info @todo fix pf module-info -->
+        <!--<dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>primefaces</artifactId>
-        </dependency>
+        </dependency>-->
 
 
         <dependency>
