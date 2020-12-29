@@ -3,11 +3,44 @@ on: [workflow_dispatch, push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 15, '16-ea', '17-ea' ]
+      fail-fast: false
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 14
+      - name: Set up JDK ${{ matrix.java }}
         uses: actions/setup-java@v1
         with:
-          java-version: 15
-      - name: Build with Maven
+          java-version: ${{ matrix.java }}
+      - run: java -version
+      - uses: actions/checkout@v2
+      - name: mvn verify
         run: mvn --batch-mode --update-snapshots verify
+  build-with-openj9:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 14, 15 ]
+        include:
+          - java: 14
+            url: 'https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz'
+          - java: 15
+            url: 'https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jdk_x64_linux_openj9_15.0.1_9_openj9-0.23.0.tar.gz'
+      fail-fast: false
+    steps:
+      - name: Setup JDK
+        id: jdk
+        run: |
+          cd /tmp
+          wget ${{ matrix.url }}
+          tar xf *.tar.gz
+          echo ::set-output name=JAVA_HOME::/tmp/`ls -d jdk*`
+      - uses: actions/checkout@v2
+      - name: java -version
+        run: $JAVA_HOME/bin/java -version
+        env:
+          JAVA_HOME: ${{ steps.jdk.outputs.JAVA_HOME }}
+      - name: mvn verify
+        run: mvn --batch-mode --update-snapshots verify
+        env:
+          JAVA_HOME: ${{ steps.jdk.outputs.JAVA_HOME }}
