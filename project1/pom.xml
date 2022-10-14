@@ -16,6 +16,16 @@
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>org.apache.cxf</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sun.activation</groupId>
+                    <artifactId>jakarta.activation</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>jakarta.activation</groupId>
+                    <artifactId>jakarta.activation-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Microsoft Documents -->
@@ -55,6 +65,11 @@
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
             <version>1.10.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.guicedee.services</groupId>
+            <artifactId>xalan</artifactId>
         </dependency>
 
         <!-- JCache -->

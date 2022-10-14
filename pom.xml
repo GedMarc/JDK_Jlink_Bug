@@ -15,9 +15,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
 
-        <jdk.release>15</jdk.release>
+        <jdk.release>17</jdk.release>
 
-        <guicedee.version>0.0.0_0-SNAPSHOT</guicedee.version>
+        <guicedee.version>1.2.0.3-jre17-rc1</guicedee.version>
 
         <maven.assembly.version>3.3.0</maven.assembly.version>
         <maven.jar.version>3.2.0</maven.jar.version>
@@ -36,7 +36,7 @@
         <maven.release.version>3.0.0-M1</maven.release.version>
         <maven.versions.version>2.8.1</maven.versions.version>
         <maven.verifyier.version>1.1</maven.verifyier.version>
-        <maven.asm.version>9.0</maven.asm.version>
+        <maven.asm.version>9.3</maven.asm.version>
         <maven.gpg.version>1.6</maven.gpg.version>
 
         <maven.war.version>3.2.2</maven.war.version>
